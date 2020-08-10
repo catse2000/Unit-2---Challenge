@@ -107,6 +107,7 @@ section{
 .about-me-img{
     flex: 1 30%;
 }
+
 .about-me-img img{
     width: 100%;
     padding: 15px;
@@ -127,12 +128,40 @@ section{
 /*apply style to My-work Section*/
 .my-work{
     background-color: var(--Dark-Purple);
+    width: 100%;
+    margin: 0 auto;
 }
+
+.my-work-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.my-work-gallery{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.my-work-gallery-item{
+    padding: 0 15px;
+}
+
+.my-work-gallery-item img{
+    width: 100%;
+}
+.project-1{
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    flex: 1 70%;
+}
+
 
 /*apply style to Contact-Me Section*/
 .contact-me{
     background-color: var(--Light-Pink);
 }
+
 /*apply styles to Footer*/
 footer{
     background-image: url(../images/header-background.jpg);

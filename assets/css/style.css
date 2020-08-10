@@ -106,23 +106,24 @@ section{
 }
 
 .about-me-img{
-    flex: 1 30%;
+    flex: 1 40%;
+    padding: 20px;
 }
 
 .about-me-img img{
     width: 100%;
-    padding: 15px;
+    padding: 30px;
     text-align: center;
 }
 
 .about-me-info{
-    flex: 1 70%;
+    flex: 1 60%;
     padding: 15px 40px;
     text-align: center;
 }
 
 .about-me-info p{
-    font-size: 30px;
+    font-size: 24px;
     padding-bottom: 30px;
 }
 
@@ -169,6 +170,12 @@ section{
     background-color: var(--Light-Pink);
 }
 
+.contact-me-container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
 .contact-me h2{
     display: inline-block;
     width: 50%;
@@ -200,11 +207,7 @@ section{
 .contact-me textarea{
     height: 70px;
 }
-.contact-me-container{
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-}
+
 
 .contact-me-form{
     flex: 1 50%;
@@ -228,7 +231,7 @@ footer{
     background-position: 80% 90%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 25px;
+    padding: 15px 30px;
     align-items: center;
 }
 
@@ -240,4 +243,75 @@ footer h2, footer div{
 footer span{
     color: var(--white-color);
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 980px){
+    .about-me{
+        flex: 0 50%;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .about-me-img{
+        padding: 0px;
+    }
+
+    .about-me p{
+        font-size: 16px;
+    }
+
+    .my-work-gallery{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .project-1{
+        grid-column: 1/ span 4;
+        flex: 100%;
+        overflow: hidden; 
+    }
+
+    .contact-me-container{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-me h2{
+        width: 100%;
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+
+    .contact-me div{
+        padding-bottom: 15px;
+    }
+
+    .contact-me label{
+        padding-bottom: 10px;
+    }
+
+    .contact-me form{
+        flex: 0 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        position: none;
+    }
+    section{
+        padding: 15px;
+    }
+
+    .contact-me-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 575px){
+    header{}
+
 }

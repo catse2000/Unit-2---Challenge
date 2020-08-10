@@ -90,11 +90,19 @@ section{
 
 /*apply styles to About Me Section*/
 .about-me{
-    background-color: var(--Light-Purple-Opaque);
+    background-color: var(--Light-Purple);
 }
 
 
-/*apply style to 
+/*apply style to My-work Section*/
+.my-work{
+    background-color: var(--Dark-Purple);
+}
+
+/*apply style to Contact-Me Section*/
+.contact-me{
+    background-color: var(--Light-Pink);
+}
 /*apply styles to Footer*/
 footer{
     background-image: url(../images/header-background.jpg);

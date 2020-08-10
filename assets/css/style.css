@@ -91,8 +91,38 @@ section{
 /*apply styles to About Me Section*/
 .about-me{
     background-color: var(--Light-Purple);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.about-me-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-me-img{
+    flex: 1 30%;
+}
+.about-me-img img{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.about-me-info{
+    flex: 1 70%;
+    padding: 15px 40px;
+    text-align: center;
+}
+
+.about-me-info p{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
 
 /*apply style to My-work Section*/
 .my-work{

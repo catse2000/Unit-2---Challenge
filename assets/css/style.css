@@ -139,10 +139,15 @@ section{
     margin: 0 auto;
 }
 
+.my-work-container h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
 .my-work-gallery{
     display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
 }
 
 .my-work-gallery-item{
@@ -156,12 +161,6 @@ section{
 
 .my-work-gallery-item img{
     width: 100%;
-}
-.project-1{
-    grid-column: 1;
-    grid-row: 1 / span 3;
-    flex: 1 70%;
-    overflow: hidden;
 }
 
 
